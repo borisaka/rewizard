@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": false,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "baseUrl": "src",
+    "paths": {
+      "@@layouts/*": ["layouts/*"]
+    },
+    "resolveJsonModule": true,
+    "isolatedModules": false,
+    "noEmit": false,
+    "noImplicitAny": false,
+    "jsx": "react",
+  },  
+  "include": [
+    "src",
+  ],
+}
