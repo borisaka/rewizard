@@ -16,14 +16,15 @@
     "moduleResolution": "node",
     "baseUrl": "src",
     "paths": {
-      "@@layouts/*": ["layouts/*"]
+      "$components/*": ["components/*"],
+      "$layouts/*": ["layouts/*"],
     },
     "resolveJsonModule": true,
     "isolatedModules": false,
     "noEmit": false,
     "noImplicitAny": false,
     "jsx": "react",
-  },  
+  },
   "include": [
     "src",
   ],

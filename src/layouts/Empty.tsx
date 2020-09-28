@@ -14,7 +14,7 @@ const Empty: FunctionComponent = (props) => (
       <div className="logo" />
       <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['2']}>
         <Menu.Item key="1"><Link to="/">Sign in</Link></Menu.Item>
-        <Menu.Item key="1"><Link to="/sign-up">Sign up</Link></Menu.Item>
+        <Menu.Item key="2"><Link to="/sign-up">Sign up</Link></Menu.Item>
       </Menu>
     </Header>
     <Content style={{ padding: '0 50px' }}>

@@ -1,7 +1,6 @@
-import React, { Component, ErrorInfo, FunctionComponent } from 'react';
-import EmptyLayout from '@@layouts/Empty';
+import React, { FunctionComponent } from 'react';
 import { RouteComponentProps } from '@reach/router';
-import { Button, Checkbox, Divider, Form, Input, Typography } from 'antd';
+import { Button, Divider, Form, Typography } from 'antd';
 import { Row, Col } from 'antd';
 
 const layout = {
@@ -20,9 +19,8 @@ type FormHandler = {
   title:  string
 }
 
-const FormPage: FunctionComponent<RouteComponentProps & FormHandler> = (props) => {
+const AbstractForm: FunctionComponent<FormHandler> = (props) => {
   return (
-    <EmptyLayout>
     <Row>
     <Col span={8}></Col>
     <Col span={8}>
@@ -51,8 +49,7 @@ const FormPage: FunctionComponent<RouteComponentProps & FormHandler> = (props) =
     </Col>
     <Col span={8}></Col>
     </Row>
-  </EmptyLayout>
   )
   } 
 
-  export default FormPage
+  export default AbstractForm

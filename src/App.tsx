@@ -10,7 +10,7 @@ import { HomeOutlined } from '@ant-design/icons';
 
 import SignInPage from './pages/SignIn';
 import SignUpPage from './pages/SignUp';
-
+import TermsOfServicePage from './pages/TermsOfService';
 
 const history = createHistory(window as any)
 

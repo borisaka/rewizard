@@ -11,7 +11,8 @@ module.exports = {
   resolve: {
     extensions: ['.ts', '.tsx', '.js'],
     alias: {
-      '@@layouts': path.resolve(__dirname, 'src/layouts')
+      '$components': path.resolve(__dirname, 'src/components'),
+      '$layouts': path.resolve(__dirname, 'src/layouts'),
     }
   },
   output: {
