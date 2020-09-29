@@ -16,13 +16,9 @@ const { SubMenu } = Menu;
 
 const { Header, Footer, Sider, Content } = Layout;
 
-const DrawRoutes = () => (
-  <Router>
-    <Redirect from="/" to="sign-in"/>
-    <SignInPage path="sign-in"/>
-    <SignUpPage path="sign-up"/>
-  </Router>
-)
+// const DrawRoutes = () => (
+  
+// )
 
 const Auth: FunctionComponent<RouteComponentProps> = (props) => {
   const  { session } = useSession()
@@ -46,7 +42,11 @@ const Auth: FunctionComponent<RouteComponentProps> = (props) => {
             <Breadcrumb.Item>App</Breadcrumb.Item>
           </Breadcrumb>
           <div className="site-layout-content">
-           <DrawRoutes />
+          <Router>
+            <Redirect from="/" to="sign-in" noThrow/>
+            <SignInPage path="sign-in"/>
+            <SignUpPage path="sign-up"/>
+          </Router>
           </div>
         </Content>
         <Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED</Footer>

@@ -11,7 +11,7 @@ import { HomeOutlined } from '@ant-design/icons';
 import IndexPage from './pages/Index';
 import AuthPage from './pages/Auth';
 
-const history = createHistory(window as any)
+// const history = createHistory(window as any)
 
 const BreadCrumbs = () => {
   return (
@@ -25,12 +25,9 @@ const BreadCrumbs = () => {
 
 export default (props) => {
   return (
-    <LocationProvider history={history}>
       <Router>
         <AuthPage path="/auth/*"/>
         <IndexPage path="/*"/>
       </Router>
-      { props.children }
-    </LocationProvider>
   )
 }

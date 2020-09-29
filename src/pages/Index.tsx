@@ -6,7 +6,7 @@ import { Redirect, RouteComponentProps } from '@reach/router';
 
 const Index: FunctionComponent<RouteComponentProps> = (props) => {
   const { session, destroySession } = useSession()
-  if(!session) { return <Redirect to="/auth"/> }
+  if(!session) { return <Redirect to="/auth" noThrow/> }
   return (
   <Layout style={{ height: "100vh", overflow: "auto" }}>
     <Header>
