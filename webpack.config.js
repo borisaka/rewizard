@@ -4,8 +4,6 @@ const webpack = require('webpack');
 const Dotenv = require('dotenv-webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-// const autorouterLoader = 
-
 module.exports = {
   entry: './src/index.tsx',
   resolve: {
@@ -13,6 +11,8 @@ module.exports = {
     alias: {
       '$components': path.resolve(__dirname, 'src/components'),
       '$layouts': path.resolve(__dirname, 'src/layouts'),
+      '$stores': path.resolve(__dirname, 'src/stores'),
+      '$utils': path.resolve(__dirname, 'src/utils'),
     }
   },
   output: {

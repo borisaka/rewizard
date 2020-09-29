@@ -17,7 +17,8 @@
     "baseUrl": "src",
     "paths": {
       "$components/*": ["components/*"],
-      "$layouts/*": ["layouts/*"],
+      "$stores/*": ["stores/*"],
+      "$utils/*": ["utils/*"]
     },
     "resolveJsonModule": true,
     "isolatedModules": false,

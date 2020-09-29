@@ -8,9 +8,8 @@ import { Breadcrumb } from 'antd';
 
 import { HomeOutlined } from '@ant-design/icons';
 
-import SignInPage from './pages/SignIn';
-import SignUpPage from './pages/SignUp';
-import TermsOfServicePage from './pages/TermsOfService';
+import IndexPage from './pages/Index';
+import AuthPage from './pages/Auth';
 
 const history = createHistory(window as any)
 
@@ -24,14 +23,14 @@ const BreadCrumbs = () => {
   )
 }
 
-export default () => {
+export default (props) => {
   return (
-  <LocationProvider history={history}>
-          <Router>
-            <SignInPage path="/"/>
-            <SignUpPage path="/sign-up"/>
-          </Router>
-  </LocationProvider>
-       
-)
-        }
+    <LocationProvider history={history}>
+      <Router>
+        <AuthPage path="/auth/*"/>
+        <IndexPage path="/*"/>
+      </Router>
+      { props.children }
+    </LocationProvider>
+  )
+}
